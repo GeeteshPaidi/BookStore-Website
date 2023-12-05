@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Petit+Formal+Script&family=Style+Script&display=swap" rel="stylesheet">
+    <title>Webtask-1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            GCBookStore
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#bestsellers">Best Sellers</a></li>
+                <li><a href="#recommended">Recommended</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="home" id="home">
+            <div class="intro-image">
+                <img class="intro-img" src="pictures\cover.webp">
+                <img class="intro-frame" src="pictures\frame.png">
+            </div>
+            <div class="intro-text">
+                Welcome to
+                <div class="title">GCBookStore</div>
+                <div class="subtitle">"A place where you can find your favourite books"</div>
+                <div class="explore-btn">
+                    <a href="#bestsellers"><button>Explore our Best Selling Books</button></a>
+                </div>
+            </div>
+        </section>
+        <section class="bestsellers" id="bestsellers">
+            <div class="title">Our Best Sellers</div>
+            <div class="bestsellers-body">
+                <div class="photo">
+                    The evergreen books loved by all.
+                    <img src="pictures\pile.png" alt="">
+                    These are the books that are most popular among our customers.
+                </div>
+                <div class="bestseller-cards">
+                    <div class="book">
+                        <img src="pictures\book1.jpg" alt="">
+                        <div class="know-more">
+                            <button>Know More</button>
+                        </div>
+                        Our Price : Rs.199
+                        <button class="add">Add to Cart</button>
+                        <button>Buy Now</button>
+                    </div>
+                    <div class="book">
+                        <img src="pictures\book2.jpg" alt="">
+                        <div class="know-more">
+                            <button>Know More</button>
+                        </div>
+                        Our Price : Rs.159
+                        <button class="add">Add to Cart</button>
+                        <button>Buy Now</button>
+                    </div>
+                    <div class="book">
+                        <div class="know-more">
+                            <button>Know More</button>
+                        </div>
+                        <img src="pictures\book3.jpg" alt="">
+                        Our Price : Rs.349
+                        <button class="add">Add to Cart</button>
+                        <button>Buy Now</button>
+                    </div>    
+                </div>
+            </div>
+        </section>
+        <section class="recommended" id="recommended">
+            <div class="title">Recommended Books</div>
+            <div class="searchbar">
+                <input class="search" type="search" placeholder="Search for books">
+                <button><img src="pictures\icon.png" alt=""></button>
+            </div>
+            <span>Customers also recommend these books</span>
+            <div class="recommended-books">
+                <div class="book-card">
+                    <img src="pictures\recm1.webp" alt="">
+                    <button>Visit Book</button>
+                </div>
+                <div class="book-card">
+                    <img src="pictures\recm2.jpg" alt="">
+                    <button>Visit Book</button>
+                </div>
+                <div class="book-card">
+                    <img src="pictures\recm3.jpg" alt="">
+                    <button>Visit Book</button>
+                </div>
+                <div class="book-card">
+                    <img src="pictures\recm4.webp" alt="">
+                    <button>Visit Book</button>
+                </div>
+                <div class="book-card">
+                    <img src="pictures\recm5.jpg" alt="">
+                    <button>Visit Book</button>
+                </div>
+            </div>
+            
+        </section>
+        <section class="reviews" id="reviews">
+            <div class="title">Reviews</div>
+            <div class="review-class">
+                <div class="review-details">
+                    People reviewed us as
+                    <div class="review review1">
+                        <div class="review-name">
+                            Eren:
+                        </div>
+                        <div class="person-review">
+                            It was an amazing experience to enter this book shop. It really felt like another world to me.
+                        </div>
+                    </div>
+                    <div class="review review2">
+                        <div class="review-name">
+                            Annie:
+                        </div>
+                        <div class="person-review">
+                            I found my childhood favourite book here. I am so happy to have found this book store.
+                        </div>
+                    </div>
+                </div>
+                <div class="review-form">
+                    <form>
+                        <fieldset>
+                            <legend>Please give us your review</legend>
+                            <p>Name:</p>
+                            <input type="text" placeholder="Enter your Name">
+                            <p>Email:</p>
+                            <input type="text" placeholder="Enter your Email">
+                            <p>Review:</p>
+                            <input class="review-box" type="text" placeholder="Write your review">
+                            <button>Clear</button>
+                            <button>Submit</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <footer class="contact" id="contact">
+                <div class="contact-block">
+                    Visit our Social Media handles
+                    <a href="https://www.google.com/" target="_blank">Instagram</a>
+                    <a href="https://www.google.com/" target="_blank">Facebook</a>
+                </div>
+                <div class="contact-block">
+                    <a href="https://www.google.com/" target="_blank">Terms and Conditions</a>
+                    <a href="https://www.google.com/" target="_blank">Privacy Policy</a>
+                    <a href="#home"><button>Back to Top</button></a>
+                </div>
+                <div class="contact-block">
+                    Contact Us
+                    <div>Phone: +19696969696</div>
+                    <div>Email: gcbookstores@gmail.com</div>
+                </div>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>

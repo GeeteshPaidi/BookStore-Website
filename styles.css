@@ -1,0 +1,442 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: rgb(230, 230, 230);
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    min-height: 330px;
+    min-width: 1000px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 10px;
+    background: rgba(0, 0 , 0 , 0.4);
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    backdrop-filter: blur(4px);
+}
+
+header .logo{
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 32px;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    margin: 0 20px;
+    font-weight: 600;
+}
+
+header ul li a{
+    color: aliceblue;
+    font-size: 24px;
+    transition: 0.25s;
+}
+
+header ul li a:hover{
+    color: black;
+    text-shadow: white 0px 0px 15px;
+    transition: 0.25s;
+}
+
+.main{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section{
+    height: 100vh;
+    padding-top: 10vh;
+    scroll-snap-align: start;
+    overflow: hidden;
+}
+
+.home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.intro-image{
+    display: flex;
+    position: relative;
+    padding: 70px;
+    overflow: hidden;
+}
+
+.intro-img{
+    width: 500px;
+    height: 500px;
+}
+
+.intro-frame{
+    position: absolute;
+    top: -85px;
+    left: -65px;
+    width: 795px;
+    height: 795px;
+    z-index: 1;
+}
+
+.intro-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 20vh;
+    height: 45vh;
+    padding: 10px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.title{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Petit Formal Script', cursive;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.intro-text button{
+    height: 50px;
+    padding: 10px;
+    font-size: 24px;
+    font-family:'Dancing Script', cursive;
+    font-weight: bolder;
+    border: solid 1px black;
+    background-color: rgb(20 , 20 ,20);
+    color: whitesmoke;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.intro-text button:hover{
+    transition: 0.35s;
+    transform: scale(1.1);
+    box-shadow: black 0px 0px 10px;
+}
+
+.bestsellers-body{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.bestseller-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.photo{
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.bestsellers-body img{
+    width: 100%;
+}
+
+.book{
+    margin: 0 17%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition-duration: 0.25s;
+    font-size: 20px;
+    font-weight:bolder;
+    position: relative;
+}
+
+.know-more{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+    width: 100%;
+    height: 71%;
+    padding: 0 20px;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.book img{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.book button{
+    width: 100%;
+    height: 10%;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    background-color: rgb(30,30,30);
+    border-radius: 6px;
+    border: solid 1px black;
+    transition: 0.3s;
+}
+
+.know-more button{
+    width: 80%;
+    height: 50px;
+    padding: 5px 0;
+}
+
+.book button:hover{
+    transition: 0.25s;
+    transform: scale(1.01);
+    box-shadow: black 0px 0px 5px;
+}
+
+.know-more:hover{
+    opacity: 1;
+    transition: 0.3s;
+    transform: scale(1.01);
+}
+
+.know-more button:hover{
+    box-shadow: white 0px 0px 5px;
+}
+
+.add:active{
+    color: green;
+}
+
+.recommended{
+    text-align: center;
+}
+
+.recommended-books{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.book-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition-duration: 0.25s;
+}
+
+.book-card img{
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: black 0px 0px 8px;
+}
+
+.book-card button{
+    width: 80%;
+    height: 35px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    background-color: rgb(30,30,30);
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.searchbar{
+    margin-top: -10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.search{
+    height: 30px;
+    width: 30%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 5px 5px;
+}
+
+.search::placeholder{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+
+}
+.searchbar button{
+    height: 30px;
+    width: 2.5%;
+    padding: 0.3%;
+    margin-left: -1%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.searchbar img{
+    width: 60%;
+}
+
+.book-card button:hover{
+    color: black;
+    background-color: #fff;
+    transition: 0.3s;
+    transform: scale(1.02);
+    box-shadow: 0 0 10px;
+}
+.reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.review-class{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+}
+.review{
+    font-weight: 500;
+    background-color: rgba(0, 0 , 0 , 0.4);
+    width: 70%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.review2{
+    margin-left: 100px;
+}
+.person-review{
+    font-family: 'Style Script', cursive;
+    color: white;
+}
+
+.review-form fieldset{
+    border: none;
+    background-color: rgba(0, 0 , 0 , 0.4);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+legend{
+    background-color: rgb(20 , 20 ,20);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.review-form p{
+    display: inline-block;
+    width: 18%;
+}
+.review-form input{
+    width: 75%;
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+}
+
+.review-box{
+    height: 70px;
+}
+
+.reviews .title{
+    margin-bottom: 0px;
+}
+
+.review-form button{
+    width: 20%;
+    height: 40px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    background-color: rgb(30,30,30);
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.review-form button:hover{
+    background-color: rgb(50,50,50) ;
+    transition: 0.3s;
+    transform: scale(1.01);
+}
+
+.contact{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(22, 20, 20);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    margin-top: -12px;
+}
+
+.contact a{
+    color: #fff;
+}
+.contact-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 40px;
+}
+
+.contact button{
+    margin: 10px;
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    background-color: rgb(200,200,200);
+    border-radius: 6px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-left: -2px;
+}
+
+.contact button:hover{
+    background-color: rgb(150,150,150) ;
+    transition: 0.3s;
+    transform: scale(1.01);
+}
+
+.contact a:hover{
+    text-shadow: 0 0 10px;
+}
